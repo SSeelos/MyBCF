@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="..\..\..\..\..\Downloads\buildingSMART-BCF-4.0-swagger.json" CodeGenerator="NSwagCSharp" ClassName="BcfClient" Link="OpenAPIs\buildingSMART-BCF-4.0-swagger.json" />
+    <OpenApiReference Include="buildingSMART-BCF-4.0-swagger.json" CodeGenerator="NSwagCSharp" Namespace="buildingSMART" ClassName="BcfClient" />
   </ItemGroup>
 
   <ItemGroup>
