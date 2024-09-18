@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="buildingSMART-BCF-4.0-swagger.json" CodeGenerator="NSwagCSharp" Namespace="buildingSMART" ClassName="BcfClient" />
+    <None Remove="buildingSMART-BCF-4.0-swagger.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <OpenApiReference Include="buildingSMART-BCF-4.0-swagger.json" ClassName="BcfClient" CodeGenerator="NSwagCSharp" Namespace="buildingSMART" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +21,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.18.2">
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="14.1.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
